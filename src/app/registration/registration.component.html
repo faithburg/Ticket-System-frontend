@@ -1,7 +1,6 @@
 <div class="container">
   <form #registerForm="ngForm" (ngSubmit)="registerUser()">
-    <!-- <small [class.text-danger]="msg['status'] == '500'">{{ msg }}</small> -->
-    <small class="text-danger">{{ msg.status }}</small>
+    <small class="text-danger">{{ msg }}</small>
     <div class="form-group">
       <label for="email">Email address</label>
       <input

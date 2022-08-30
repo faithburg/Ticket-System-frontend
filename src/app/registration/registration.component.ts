@@ -11,7 +11,7 @@ import { User } from '../user';
 export class RegistrationComponent implements OnInit {
 
   user = new User();
-  msg= '';
+ msg ='';
 
   constructor(private _service : RegistrationService, private _router : Router) { }
 
@@ -26,7 +26,7 @@ export class RegistrationComponent implements OnInit {
       },
       error => {
         console.log("exception occured");
-        this.msg=error.error;
+        this.msg= error.error.message;
       }
     )
   }
