@@ -23,6 +23,7 @@ export class LoginComponent implements OnInit {
       data =>{ 
         console.log("response received");
         this._router.navigate(['/home']);
+        localStorage.getItem('this.user.role');
       },
       error => {
         console.log("exception occured");

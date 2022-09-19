@@ -9,13 +9,21 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
+import { AddticketComponent } from './addticket/addticket.component';
+import { TicketlistComponent } from './ticketlist/ticketlist.component';
+import { EditticketComponent } from './editticket/editticket.component';
+import { ViewticketComponent } from './viewticket/viewticket.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegistrationComponent,
-    HomeComponent
+    HomeComponent,
+    AddticketComponent,
+    TicketlistComponent,
+    EditticketComponent,
+    ViewticketComponent
   ],
   imports: [
     BrowserModule,
